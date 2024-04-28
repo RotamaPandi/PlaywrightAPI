@@ -24,6 +24,7 @@ test('Create User', async ({request})=>{
                         });
 
     console.log (await response.json());
+    
     expect(response.status()).toBe(201);
 
     var res = await response.json()
