@@ -10,10 +10,10 @@ pipeline {
     //   steps {
     //     sh 'npx playwright test --help'
     //   }
-    }
+    // }
     stage('test') {
       steps {
-        echo 'npx playwright test .tests/API/ApiTesting.spec.js --headed --project=chromium'
+        sh 'npx playwright test .tests/API/ApiTesting.spec.js --headed --project=chromium'
       }
       // post {
       //   success {
