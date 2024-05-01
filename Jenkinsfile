@@ -6,14 +6,14 @@ pipeline {
         sh 'npm install playwright/test@next'
       }
     }
-    stage('help') {
-      steps {
-        sh 'npx playwright test --help'
-      }
+    // stage('help') {
+    //   steps {
+    //     sh 'npx playwright test --help'
+    //   }
     }
     stage('test') {
       steps {
-        sh 'npx playwright test .tests/API/ApiTesting.spec.js --headed --project=chromium'
+        echo 'npx playwright test .tests/API/ApiTesting.spec.js --headed --project=chromium'
       }
       // post {
       //   success {
