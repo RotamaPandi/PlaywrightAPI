@@ -13,7 +13,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'npx playwright test .tests/API/api.spec.ts --headed --project=chromium'
+        sh 'npx playwright test .tests/API/ApiTesting.spec.js --headed --project=chromium'
       }
       // post {
       //   success {
