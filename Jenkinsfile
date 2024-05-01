@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('install playwright') {
       steps {
-        sh 'npm install playwright/test@next'
+        sh 'npm i -D @playwright/test'
       }
     }
     // stage('help') {
